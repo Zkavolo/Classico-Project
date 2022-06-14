@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <!-- my Css -->
     <link rel="stylesheet" href="assets\css\style.css">
 
@@ -22,14 +26,14 @@
 
 <body>
     <div class="bg_content">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light">
                 <a class="navbar-brand" href="#">Classico</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto navbar__section">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Masuk</a>
                         </li>
@@ -39,18 +43,87 @@
                     </ul>
                 </div>
             </nav>
-        </header>
+        </div>
 
-        <section class="section_1_lp">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="p-2">
+                    <div class="container-title">
+                        <div class="title">
+                            <h1>Segera bergabung dengan kami dan temukan passion mu!</h1>
+                        </div>
+                        <div class="title-p">
+                            <p>Memberikan ruang belajar online untuk menciptakan interaksi
+                                yang baik dan menyenangkan bagi para mentor dan peserta kelas,
+                                serta memberikan kesempatan bagi siapapun untuk menjadi mentor
+                                terbaik ditiap kelas tanpa ada batasan apapun dengan fasilitas terbaik
+                                yang kami tawarkan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="big-img">
+                        <img src="assets\img\classicoProject.png" alt="classico">
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">daftar sekarang</button>
+        </div>
 
-        </section>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="p-2">
+                    <h2>Daftar Paket Kelas Classico</h2>
+                </div>
+                <div class="p-2">
+                    <div class="box-content">
+                        <div class="img-content">
+                            <img src="assets\img\img1.png" alt="img1">
+                        </div>
+                        <p>Private</p>
+                        <p>Maksimal 4 siswa per-kelas</p>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="box-content">
+                        <div class="img-content">
+                            <img src="assets\img\img2.png" alt="img2">
+                        </div>
+                        <p>Semi-Private</p>
+                        <p>Maksimal 8 siswa per-kelas</p>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="box-content">
+                        <div class="img-content">
+                            <img src="assets\img\img3.png" alt="img3">
+                        </div>
+                        <p>Workshop</p>
+                        <p>Maksimal 20 siswa per-kelas</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <h2>Keunggulan Belajar di Classico</h2>
+            <div class="d-inline-flex p-3">
+                <div class="p-2">
+                    <img src="" alt="">
+                </div>
+                <div class="p-2">
+                    <div class="d-flex flex-column">
+                        <div class="p-2">Flex item 1</div>
+                        <div class="p-2">Flex item 2</div>
+                        <div class="p-2">Flex item 3</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-
-
-
-
-
-
 
 
     <!-- Optional JavaScript -->
