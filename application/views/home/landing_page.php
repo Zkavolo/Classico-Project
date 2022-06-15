@@ -38,10 +38,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Masuk</a>
+                            <a class="nav-link" href="<?php echo base_url() ?>main/login">Masuk</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Daftar</a>
+                            <a class="nav-link" href="<?php echo base_url() ?>main/register">Daftar</a>
                         </li>
                     </ul>
                 </div>
