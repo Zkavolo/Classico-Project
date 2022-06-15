@@ -1,11 +1,6 @@
-/* * {
-    margin: 0;
-    padding: 30px 20px;
-} */
-
 body {
     margin: 0;
-    padding: 40px 50px;
+    padding: 20px 30px;
     background-color: rgb(155,192,207);
 }
 
@@ -38,6 +33,16 @@ body {
 
 .nav-link {
     font-family: 'Lato Sans', sans-serif;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #479BAD;
+    width: 50%;
+    margin: auto;
+    margin-bottom: -3px;
+    color: black;
 }
 
 .navbar-toogler {
@@ -79,9 +84,19 @@ body {
     text-align: center;
 }
 
+#img1-sect1 {
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+
 /* //////////////////////////////// */
 
 @media (min-width: 576px) {
+
+    body {
+        padding: 40px 50px;
+    }
 
     .navbar-brand {
         font-weight: 700;
@@ -109,7 +124,16 @@ body {
     }
 
     #img1-sect1 {
-        width: 388px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
         height: fit-content;
     }
+
+    .button-wrapper {
+        margin-right: 50%;
+        text-align: center;
+        margin-top: -10%;
+    }
+
 }

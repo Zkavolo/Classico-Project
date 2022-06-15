@@ -29,12 +29,9 @@ img {
     display: block;
 }
 
-
-.img-c {
-   width: fit-content;
-}
-
-.img-wrapper-center {
-    align-items: center;
-    text-align: center;
+.btn-primary {
+    color: black;
+    background-color: #45D0D9;
+    border-color: transparent;
+    font-family: 'Lato Sans', sans-serif;
 }

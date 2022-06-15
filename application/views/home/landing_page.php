@@ -19,8 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <!-- my Css -->
-    <!-- <link rel="stylesheet" href="assets\css\Main.css"> -->
-    <!-- <link rel="stylesheet" href="assets\css\landing_page.css"> -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets\css\Main.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets\css\landing_page.css">
 
@@ -60,15 +58,14 @@
                         baik dan menyenangkan bagi para mentor dan peserta kelas, serta memberikan
                         kesempatan bagi siapapun untuk menjadi mentor terbaik ditiap kelas
                         tanpa ada batasan apapun dengan fasilitas terbaik yang kami tawarkan.</p>
-                </div>
-                <div class="col">
-                    <div class="img-wrapper-center">
-                        <!-- <img src="assets\img\classicoProject.png" id="img1-sect1" alt="classico"> -->
-                        <img src="<?php echo base_url('assets\img\classicoProject.png'); ?>" alt="img1" id="img1-sect1">
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary">DAFTAR SEKARANG</button>
                     </div>
                 </div>
+                <div class="col">
+                    <img src="<?php echo base_url('assets\img\classicoProject.png'); ?>" alt="img1" id="img1-sect1">
+                </div>
             </div>
-            <button>Daftar Sekarang</button>
         </div>
     </div>
 
