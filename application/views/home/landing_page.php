@@ -19,13 +19,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <!-- my Css -->
-    <link rel="stylesheet" href="assets\css\style.css">
+    <!-- <link rel="stylesheet" href="assets\css\Main.css"> -->
+    <!-- <link rel="stylesheet" href="assets\css\landing_page.css"> -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets\css\Main.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets\css\landing_page.css">
 
     <title>Classico</title>
 </head>
 
 <body>
     <div class="bg_content">
+
+        <!-- navbar -->
         <div class="container">
             <nav class="navbar navbar-expand-sm navbar-light">
                 <a class="navbar-brand" href="#">Classico</a>
@@ -44,87 +49,28 @@
                 </div>
             </nav>
         </div>
+        <!-- end of navbar -->
 
+        <!-- section 1 -->
         <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="p-2">
-                    <div class="container-title">
-                        <div class="title">
-                            <h1>Segera bergabung dengan kami dan temukan passion mu!</h1>
-                        </div>
-                        <div class="title-p">
-                            <p>Memberikan ruang belajar online untuk menciptakan interaksi
-                                yang baik dan menyenangkan bagi para mentor dan peserta kelas,
-                                serta memberikan kesempatan bagi siapapun untuk menjadi mentor
-                                terbaik ditiap kelas tanpa ada batasan apapun dengan fasilitas terbaik
-                                yang kami tawarkan.</p>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col">
+                    <h1 id="title-sect1">Segera bergabung dengan kami dan temukan passion mu!</h1>
+                    <p id="p-sect1">Memberikan ruang belajar online untuk menciptakan interaksi yang
+                        baik dan menyenangkan bagi para mentor dan peserta kelas, serta memberikan
+                        kesempatan bagi siapapun untuk menjadi mentor terbaik ditiap kelas
+                        tanpa ada batasan apapun dengan fasilitas terbaik yang kami tawarkan.</p>
                 </div>
-                <div class="p-2">
-                    <div class="big-img">
-                        <img src="assets\img\classicoProject.png" alt="classico">
+                <div class="col">
+                    <div class="img-wrapper-center">
+                        <!-- <img src="assets\img\classicoProject.png" id="img1-sect1" alt="classico"> -->
+                        <img src="<?php echo base_url('assets\img\classicoProject.png'); ?>" alt="img1" id="img1-sect1">
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary">daftar sekarang</button>
-        </div>
-
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="p-2">
-                    <h2>Daftar Paket Kelas Classico</h2>
-                </div>
-                <div class="p-2">
-                    <div class="box-content">
-                        <div class="img-content">
-                            <img src="assets\img\img1.png" alt="img1">
-                        </div>
-                        <p>Private</p>
-                        <p>Maksimal 4 siswa per-kelas</p>
-                    </div>
-                </div>
-                <div class="p-2">
-                    <div class="box-content">
-                        <div class="img-content">
-                            <img src="assets\img\img2.png" alt="img2">
-                        </div>
-                        <p>Semi-Private</p>
-                        <p>Maksimal 8 siswa per-kelas</p>
-                    </div>
-                </div>
-                <div class="p-2">
-                    <div class="box-content">
-                        <div class="img-content">
-                            <img src="assets\img\img3.png" alt="img3">
-                        </div>
-                        <p>Workshop</p>
-                        <p>Maksimal 20 siswa per-kelas</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="container">
-            <h2>Keunggulan Belajar di Classico</h2>
-            <div class="d-inline-flex p-3">
-                <div class="p-2">
-                    <img src="" alt="">
-                </div>
-                <div class="p-2">
-                    <div class="d-flex flex-column">
-                        <div class="p-2">Flex item 1</div>
-                        <div class="p-2">Flex item 2</div>
-                        <div class="p-2">Flex item 3</div>
-                    </div>
-                </div>
-
-            </div>
-
+            <button>Daftar Sekarang</button>
         </div>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

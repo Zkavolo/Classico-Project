@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.bg_content {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.container {
+    max-width: 100%;
+    /* border: red solid 1px; */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#border-marker {
+    border: green solid 1px;
+}
+
+img {
+    display: block;
+}
+
+
+.img-c {
+   width: fit-content;
+}
+
+.img-wrapper-center {
+    align-items: center;
+    text-align: center;
+}
