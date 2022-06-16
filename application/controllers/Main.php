@@ -8,4 +8,14 @@ class Main extends CI_Controller
 	{
 		$this->load->view('home/landing_page.php');
 	}
+
+	public function login()
+	{
+		$this->load->view('home/login');
+	}
+
+	public function register()
+	{
+		$this->load->view('home/register');
+	}
 }
