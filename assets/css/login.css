@@ -1,6 +1,82 @@
 body {
-    margin: 0;
-    padding: 20px 30px;
-    background-color: rgb(155,192,207);
+    margin: 30px;
+    padding: 0;
+    background-color: #E2F6F9;
 }
 
+#previous-button {
+    text-decoration: none;
+    color: black;
+    padding: 7px 10px;
+    border-radius: 4px;  
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#previous-button:hover {
+    text-shadow: 3px 3px 5px black;
+}
+
+.p-2 {
+    padding: 0 !important;
+    width: auto;
+}
+
+#image_5 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+
+.col-6 {
+    padding: 0 !important;
+}
+
+p {
+    font-size: small;
+}
+
+#title-sect1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+.form-login {
+    padding: 60px 30px 10px 30px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-radius: 0;
+    border: #45D0D9 solid 1px;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #479BAD;
+    border-color: transparent;
+    font-family: 'Lato Sans', sans-serif;
+    border-radius: 14px;
+}
+
+.btn {
+    width: 25%;
+}
+
+.d-flex {
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.form-space {
+    margin-bottom: 10px;
+}

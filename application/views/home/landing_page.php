@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
     <!-- my Css -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets\css\Main.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets\css\global.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets\css\landing_page.css">
 
     <title>Classico</title>

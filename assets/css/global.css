@@ -17,21 +17,35 @@ h5 {
 .container {
     max-width: 100%;
     /* border: red solid 1px; */
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 0;
+    margin-bottom: 0;
 }
 
-#border-marker {
+#border-marker-green {
     border: green solid 1px;
+}
+
+#border-marker-black {
+    border: black solid 1px;
 }
 
 img {
     display: block;
 }
 
-.btn-primary {
-    color: black;
-    background-color: #45D0D9;
-    border-color: transparent;
+.bg-dark-blue {
+    background-color: rgba(90, 158, 187, 0.53);
+    position: cover;
+}
+
+.align-center-content {
+    text-align: center;
+}
+
+.lato-font {
     font-family: 'Lato Sans', sans-serif;
+}
+
+.josefin-font {
+    font-family: 'Josefin Sans', sans-serif;
 }
