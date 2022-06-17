@@ -27,7 +27,6 @@
 
 <body>
     <div class="bg_content">
-
         <!-- navbar -->
         <div class="container">
             <nav class="navbar navbar-expand-sm navbar-light">
@@ -37,12 +36,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
+                        <?php if(!$this->session->userdata('logged_in')) :?>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>main/login">Masuk</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>main/register">Daftar</a>
                         </li>
+                        <?php endif; ?>
+                        <?php if($this->session->userdata('logged_in')) :?>
+                            <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url() ?>users/logout">Log out</a>
+                        </li>
+                        <?php endif; ?>    
                     </ul>
                 </div>
             </nav>

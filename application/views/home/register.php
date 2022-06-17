@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -38,43 +38,49 @@
                         <img src="<?php echo base_url() ?>assets\icon\back-icon.png" alt="back">
                     </div>
                       <h1 id="title-sect1">Daftar</h1>
-                          <p id="p-sect1">Selamat Datang. Ayo buat akunmu! Sudah punya akun?<p href=#>Masuk</p></p>
-                                
-                      <form>
+                          <p id="p-sect1">Selamat Datang. Ayo buat akunmu! Sudah punya akun?<a href="<?php echo base_url()?>main/login">Masuk</a></p>
+                                <?php echo form_open('users/register'); ?>
                         <div class="form-group">
                              <label for="namalengkap">Nama Lengkap</label>
-                             <input type="text" class="form-control" id="namalengkap" placeholder="">
+                             <input type="text" class="form-control" name="namalengkap" placeholder="">
+                                 <span style="color:#EA1717;"><?php echo form_error('namalengkap'); ?></span>
                              </div>
                                 <div class="form-group">
                                 <label for="namapengguna">Nama Pengguna</label>
-                                  <input type="text" class="form-control" id="namalengkap" placeholder="">
+                                  <input type="text" class="form-control" name="namapengguna" placeholder="">
+                                  <span style="color:#EA1717;"><?php echo form_error('namapengguna'); ?></span>
                              </div>
                              <div class="form-group">
                                 <label for="email">Email</label>
-                                  <input type="email" class="form-control" id="email" placeholder="">
+                                  <input type="email" class="form-control" name="email" placeholder="">
+                                  <span style="color:#EA1717;"><?php echo form_error('email'); ?></span>
                              </div>
                              <div class="form-group">
                                 <label for="status">Status</label>
-                                  <input type="text" class="form-control" id="status" placeholder="">
+                                  <input type="text" class="form-control" name="status" placeholder="">
                              </div>
                              <div class="form-group">
                                 <label for="nomorhandphone">Nomor Handphone</label>
-                                  <input type="int" class="form-control" id="nomorhandphone" placeholder="">
+                                  <input type="number" class="form-control" name="nomorhandphone" placeholder="">
+                                  <span style="color:#EA1717;"><?php echo form_error('nomorhandphone'); ?></span>
                              </div>
                              <div class="form-group">
                                 <label for="katasandi">Kata Sandi</label>
-                                  <input type="text" class="form-control" id="katasandi" placeholder="">
+                                  <input type="text" class="form-control" name="katasandi" placeholder="">
+                                  <span style="color:#EA1717;"><?php echo form_error('katasandi'); ?></span>
                              </div>
                              <div class="form-group">
                                 <label for="katasandi">Konfirmasi Kata Sandi</label>
-                                  <input type="text" class="form-control" id="katasandi" placeholder="">
+                                  <input type="text" class="form-control" name="konfirmasi_kata_sandi" placeholder="">
+                                  <span style="color:#EA1717;"><?php echo form_error('konfirmasi_kata_sandi'); ?></span>
                              </div>
                             <div class="form-check">
-                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                             <label class="form-check-label" for="exampleCheck1">Saya menyetujui aturan pakai yang berlaku</label>
+                             <input type="checkbox" class="form-check-input" name="check">
+                             <label class="form-check-label" for="check">Saya menyetujui aturan pakai yang berlaku</label>
+                             <span style="color:#EA1717;"><?php echo form_error('check'); ?></span>
                         </div>
-                            <button type="submit" class="btn btn-primary">DAFTAR</button>
-                        </form>
+                            <button type="submit" class="btn btn-primary" value="submit">DAFTAR</button>
+                        <?php echo form_close(); ?>
                     </div>
                     <div class="column">
                         <img src="<?php echo base_url() ?>assets\img\img6.png" alt="image_6">

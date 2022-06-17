@@ -47,19 +47,19 @@
                     <div class="form-login">
                         <h1 id="title-sect1">Masuk</h1>
                         <p id="p-sect1">Selamat Datang Kembali! Silahkan masuk untuk<br> melanjutkan.</p>
-
-                        <form>
+                        <span style="color:#EA1717;"><p><?= $data ?></p></span>
+                        <?php echo form_open('users/login'); ?>
                             <div class="form-group">
-                                <label class="lato-font" for="exampleInputEmail1">Nama Pengguna atau Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username/Email">
+                                <label class="lato-font" for="user_main">Nama Pengguna atau Email</label>
+                                <input type="text" class="form-control" name="user_main" aria-describedby="emailHelp" placeholder="Enter Username/Email">
                             </div>
                             <div class="form-group">
-                                <label class="lato-font" for="exampleInputPassword1">Kata Sandi</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <label class="lato-font" for="katasandi">Kata Sandi</label>
+                                <input type="password" class="form-control" name="katasandi" placeholder="Password">
                             </div>
                             <div class="d-flex justify-content-between">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <input type="checkbox" class="form-check-input" name="remember_me">
                                     <label class="form-check-label" for="exampleCheck1">Simpan Kata Sandi ?</label>
                                 </div>
                                 <div class="form-forget-pass">
@@ -69,10 +69,10 @@
                             <div class="col d-flex justify-content-center">
                                 <button type="submit" class="btn btn-primary">MASUK</button>
                             </div>
+                            <?php echo form_close(); ?>
                             <div class="col d-flex justify-content-center">
                                 <p>Belum Punya Akun? <span><a href="#">daftar</a></span></p>
                             </div>
-                        </form>
                     </div>
                 </div>
             </div>

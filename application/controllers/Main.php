@@ -11,8 +11,15 @@ class Main extends CI_Controller
 
 	public function login()
 	{
-		$this->load->view('home/login');
+		$data['data'] ="";
+		$this->load->view('home/login', $data);
 	}
+
+	// public function login_notcommit()
+	// {
+	// 	$data['data'] ="";
+	// 	$this->load->view('home/login_notcommit', $data);
+	// }
 
 	public function register()
 	{
